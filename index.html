@@ -13,7 +13,10 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    
+      
+    <link rel="import" href="bower_components/jquery/dist/jquery.min.js">
+    <script src="js/script.js"></script>
     <!-- Custom styles for this template -->
     <link href="dashboard.css" rel="stylesheet">
 
@@ -26,55 +29,51 @@
   </head>
 
   <body>
-
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><img src="images/hamburger.png"></a>
-        </div>
-        
+      <div id="main">
+                <div class="icon-menu">
+        <i class="fa fa-bars"></i>
+        <img src="glyphicons_free/glyphicons_free/glyphicons/png/glyphicons-517-menu-hamburger.png">&nbsp;Menu
       </div>
-    </nav>
-
-    <div class="container-fluid" id="navbar">
-      <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Contact Me</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-        <div id="main">
-                 <p><img src="images/mypic.jpg" style="width:200px;height:300px" align="left"/>
-                         <div id="text">
-                                      My name is Anthony Prom. I am currently enrolled as a Junior at the University of Portland, majoring in Computer Science.<br>
-                                     I have experience in Java, C, C++, HTML, CSS, Javascript, and Assembly as well as taken classes including Object-Oriented Design, <br>
-                                     Data Structures, UNIX lab, Software Engineering, Computer Graphics, and Programming Languages. I also have experience in multiple <br> 
-                                     operating systems including Windows, Mac OS, and Linux. For professional reasons, a copy of my resume can be found in the "Projects" tab<br>
-                                     along with links to projects I have worked on.
-                                     
-                         </div></p>
-        </div>
-            
-
-        </div>
+      <div class="container">
+          
+        <div class="menu">
+      
+      <!-- Menu icon -->
+      <div class="icon-close">
+       
       </div>
+
+      <!-- Menu -->
+      <ul>
+        <li><a href="http://anthonyprom.com">Home</a></li>
+        <li><a href="http://projects.anthonyprom.com">Projects</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </div>
+      
+        <div class="jumbotron">
+            
+                <p>
+                <div id="text">
+                    My name is Anthony Prom. I am currently enrolled as a Junior at the University of Portland, majoring in Computer Science.<br>
+                    I have experience in Java, C, C++, HTML, CSS, Javascript, and Assembly as well as taken classes including Object-Oriented Design, <br>
+                    Data Structures, UNIX lab, Software Engineering, Computer Graphics, and Programming Languages. I also have experience in multiple <br> 
+                    operating systems including Windows, Mac OS, and Linux. For professional reasons, a copy of my resume can be found in the "Projects" tab<br>
+                    along with links to projects I have worked on.
+                                     
+                </div></p>
+            </div>
+          </div>
+        </div>
+      
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  
     <script src="js/bootstrap.min.js"></script>
+    
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>
