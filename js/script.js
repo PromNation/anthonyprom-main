@@ -1,8 +1,7 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
 
-
-var main = function () {
+$(document).ready(function () {
     "use strict";
     $('.icon-menu').click(function () {
         $('.menu').animate({
@@ -20,5 +19,4 @@ var main = function () {
             left: '0px'
         }, 200);
     });
-};
-$(document).ready(main);
+});
