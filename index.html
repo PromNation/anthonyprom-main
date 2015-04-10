@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,15 +11,20 @@
 
     <title>Anthony Prom</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    
+    <link href="css/stylesheet.css" rel="stylesheet">
       
-    
+    <!-- Imports-->
+    <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+    <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+   <link rel="import" href="bower_componenets/paper-tabs/paper-tabs.html">
+    <link rel="import" href="bower_componenets/core-toolbar/core-toolbar.html">
+      <link rel="import" href="bower_componenets/core-selector/core-selector.html">
+    <link rel="import" href="bower_components/polymer/polymer.html">
+   
     <!-- Custom styles for this template -->
     <link href="dashboard.css" rel="stylesheet">
-
-    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -28,31 +33,16 @@
   </head>
 
   <body>
-      <div id="main">
-                <div class="icon-menu">
-        <i class="fa fa-bars"></i>
-        <img src="glyphicons_free/glyphicons_free/glyphicons/png/glyphicons-517-menu-hamburger.png">&nbsp;Menu
-      </div>
-      <div class="container">
-          
-        <div class="menu">
-      
-      <!-- Menu icon -->
-      <div class="icon-close">
-       
-      </div>
+      <core-toolbar>
+          <div flex>Home</div>
+      </core-toolbar>
+      <paper-tabs selected="0">
+        <paper-tab>Home</paper-tab>    
+      </paper-tabs>
+     <div class="container">
 
-      <!-- Menu -->
-      <ul>
-        <li><a href="http://anthonyprom.com">Home</a></li>
-        <li><a href="http://projects.anthonyprom.com">Projects</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-      
         <div class="jumbotron">
-            
+          
                 <p>
                 <div id="text">
                     My name is Anthony Prom. I am currently enrolled as a Junior at the University of Portland, majoring in Computer Science.<br>
@@ -64,7 +54,7 @@
                 </div></p>
             </div>
           </div>
-        </div>
+          
       
 
     <!-- Bootstrap core JavaScript
