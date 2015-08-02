@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Anthony Prom</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="import"
+          href="bower_components/polymer/polymer.html">
+      
+    
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+
+      
+      <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+      <link rel="import" href="bower_components/iron-icon/iron-icon.html">
+      <link rel="import" href="bower_components/iron-icons/iron-icons.html">
+      <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
+      <link rel="import" href="bower_components/paper-button/paper-button.html">
+      <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+      <link rel="import" href="bower_components/paper-styles/paper-styles/color.html">
+      <link rel="import" href="bower_components/paper-styles/paper-styles/demo-pages.html">
+      <link rel="import" href="bower_components/paper-drawer-panel/paper-drawer-panel.html">
+      <link rel="import" href="bower_components/paper-header-panel/paper-header-panel.html">
+      <link rel="import" href="bower_components/polymer/polymer.html">
+      
+      <style is="custom-style">
+
+      #paperDrawerPanel [main] {
+        background-color: var(--google-grey-100);
+      }
+
+      #paperDrawerPanel [drawer] {
+        border-right: 1px solid var(--google-grey-300);
+      }
+
+      #paperDrawerPanel[right-drawer] [drawer] {
+        border-left: 1px solid var(--google-grey-300);
+      }
+
+      paper-button {
+        color: white;
+        margin: 10px;
+        background-color: var(--google-blue-700);
+        white-space: nowrap;
+      }
+
+    </style>
+      
+       <style is="custom-style">
+      .horizontal-section {
+        min-width: 100px;
+      }
+
+      paper-icon-button {
+        margin-left: 30px;
+        display: block;
+        width: 24px;
+        text-align: center;
+      }
+
+      paper-icon-button.blue {
+        color: var(--paper-light-blue-500);
+      }
+
+      paper-icon-button.red {
+        color: var(--paper-red-500);
+      }
+
+      paper-icon-button.orange {
+        color: var(--paper-orange-500);
+      }
+
+      paper-icon-button.green {
+        color: var(--paper-green-500);
+      }
+
+      paper-icon-button.blue:hover {
+        background: var(--paper-light-blue-50);
+        border-radius: 50%;
+      }
+
+      paper-icon-button.red:hover {
+        background: var(--paper-red-50);
+        border-radius: 50%;
+      }
+
+      paper-icon-button.orange:hover {
+        background: var(--paper-orange-50);
+        border-radius: 50%;
+      }
+
+      paper-icon-button.green:hover {
+        background: var(--paper-green-50);
+        border-radius: 50%;
+      }
+
+      paper-icon-button.white {
+        margin-left: 0px;
+        width: 50px;
+        --paper-icon-button-ink-color: var(--paper-indigo-500);
+      }
+
+      paper-icon-button.huge::shadow #icon {
+        width: 100px;
+        height: 100px;
+      }
+
+      paper-icon-button.huge #icon {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+   <body onclick="clickAction(event);" unresolved>
+       
+       <paper-drawer-panel>
+>
+>           <paper-header-panel drawer>
+>             <paper-toolbar>
+>               <div><!-- Menu -->
+      <ul>
+        <li><a href="http://anthonyprom.com">Home</a></li>
+        <li><a href="http://projects.anthonyprom.com">Projects</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+>             </paper-toolbar>
+>             <div> Drawer content... </div>
+>           </paper-header-panel>
+>
+>           <paper-header-panel main>
+>             <paper-toolbar>
+>               <paper-icon-button on-tap="togglePanel" icon="menu" alt="menu" class="white"></paper-icon-button>
+>               <div>Title</div>
+>             </paper-toolbar>
+>             <div> Main content... </div>
+>           </paper-header-panel>
+>
+>         </paper-drawer-panel>
+   
+
+  <script>
+>       Polymer({
+>             is: 'm-layout',
+>             togglePanel: function() {
+>                 this.$.paper_drawer_panel.togglePanel();
+>             }
+>       });
+>     </script>
+   
+     
+      
+      
+      <div id="main">
+      <div class="container">
+          
+        <div class="menu">
+      
+
+      
+      
+        <div class="jumbotron">
+            
+                <p>
+                <div id="text">
+                    My name is Anthony Prom. I am currently enrolled as a Senior at the University of Portland, majoring in Computer Science.<br>
+                    I have experience in Java, C, C++, HTML, CSS, Javascript, and Assembly as well as taken classes including Object-Oriented Design, <br>
+                    Data Structures, UNIX lab, Software Engineering, Computer Graphics, and Programming Languages. I also have experience in multiple <br> 
+                    operating systems including Windows, Mac OS, and Linux. For professional reasons, a copy of my resume can be found in the "Projects" tab<br>
+                    along with links to projects I have worked on.
+                    
+                    
+                                     
+                </div></p>
+            </div>
+          </div>
+        </div>
+      
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="import" href="bower_components/jquery/dist/jquery.min.js">
+    <script src="js/script.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    
+    <script>
+      function clickAction(e) {
+        var t = e.target;
+        if (t.localName === 'paper-icon-button') {
+          if (t.hasAttribute('disabled')) {
+            console.error('should not be able to click disabled button', t);
+          } else {
+            console.log('click', t);
+          }
+        }
+      }
+    </script>
+    <script>
+    togglePanel: function() {
+        if (this._isMainSelected()) {
+          this.openDrawer();
+        } else {
+          this.closeDrawer();
+        }
+      }
+    </script>
+  </body>
+</html>

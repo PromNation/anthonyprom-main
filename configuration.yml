@@ -1,0 +1,57 @@
+Eco:
+  enable: false
+  start_cash: 250
+  currency: $
+  enable_sell_command: true
+  enable_sell_when_no_sell_price_found: true
+  not_found_price: 1
+  Message:
+    sell: Sold .AMOUNT. .ITEM. for the price of §6.CASH.§f each!
+    sell_info: You can sell .ITEM. for §6.CASH.
+    sell_cant: You can't sell this item!
+    wallet_add: Added §6.CASH.§f to .PLAYER.'s wallet.
+    wallet_remove: Removed §6.CASH.§f from .PLAYER.'s wallet.
+    wallet_set: Value of .PLAYER.'s wallet setted to §6.CASH.
+    wallet_deleted: wallet successfully deleted!
+    wallet_contains: Your wallet contains §6.CASH.
+    wallet_contains_other: .PLAYER.'s wallet contains §6.CASH.
+    wallet_not_enough: §cYou don't have enough money to buy that!
+Shops:
+  enable: false
+  Message:
+    shop_abort: §cShop command has been cancelled!
+    click_chest: Now click any chest(shop) to execute the command!
+    cant_edit_infinite: §cYou can't edit the contents of an infinite shop!
+    remove_first: §cBefore breaking this shop you should remove it using /shop remove
+    not_your_shop: §cThis isn't your shop!
+    not_found: §cNo shop found on this chest!
+    max_amount: §cThis shop does not have the specified amount of items!
+    remove_shop: Shop successfully removed
+    create_shop: Shop successfully created! Happy selling!
+    create_on_existing: §cYou can't make a shop on a existing one!
+    shop_command_on_lock: Shop commands won't work on locked chests!
+    add_items: .AMOUNT. .ITEM. is added to your shop!
+    remove_items: .AMOUNT. .ITEM. are removed from your shop!
+    buy: You bought .AMOUNT. .ITEM.!
+    info0: §2==========.PLAYER.'s shop==========
+    info1: 'Item: .ITEM.'
+    info2: 'Item data: .DATA.'
+    info3: 'Amount: .AMOUNT.'
+    info4: 'Price: §6.CASH.'
+Lock:
+  enable: false
+  remove_lock_tool_id: 3
+  lock_chests: true
+  lock_furnaces: true
+  lock_dispensers: true
+  Message:
+    lock: .BLOCK. locked.
+    unlock: .BLOCK. unlocked.
+    is_locked: §cThis .BLOCK. is locked.
+    create_lock: .BLOCK. lock created.
+    remove_lock: .BLOCK. lock removed.
+Core:
+  Message:
+    no_permission: §cYou don't have premission to do that!
+    not_enough_items: §cYou don't have enought of that item in your inventory!
+    player_not_found: §cThat player could not be found!

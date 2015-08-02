@@ -1,0 +1,76 @@
+default: default
+groups:
+  default:
+    permissions:
+    - bukkit.broadcast.user
+    - group.default
+    groups: []
+    meta:
+      prefix: '&9user'
+  moderator:
+    permissions:
+    - bukkit.command.ban
+    - bukkit.command.ban.ip
+    - bukkit.command.ban.player
+    - bukkit.command.kick
+    - group.moderator
+    - ^group.default
+    groups:
+    - default
+    meta:
+      prefix: '&7moderator'
+  admin:
+    permissions:
+    - PromNation
+    - bPermissions.*
+    - bukkit.broadcast
+    - bukkit.broadcast.admin
+    - bukkit.command
+    - bukkit.command.defaultgamemode
+    - bukkit.command.effect
+    - bukkit.command.gamemode
+    - bukkit.command.give
+    - bukkit.command.help
+    - bukkit.command.kill
+    - bukkit.command.list
+    - bukkit.command.me
+    - bukkit.command.op
+    - bukkit.command.op.give
+    - bukkit.command.op.take
+    - bukkit.command.plugins
+    - bukkit.command.reload
+    - bukkit.command.save
+    - bukkit.command.save.disable
+    - bukkit.command.save.enable
+    - bukkit.command.save.perform
+    - bukkit.command.say
+    - bukkit.command.seed
+    - bukkit.command.stop
+    - bukkit.command.teleport
+    - bukkit.command.tell
+    - bukkit.command.time
+    - bukkit.command.time.add
+    - bukkit.command.time.set
+    - bukkit.command.toggledownfall
+    - bukkit.command.unban
+    - bukkit.command.unban.ip
+    - bukkit.command.unban.player
+    - bukkit.command.version
+    - bukkit.command.whitelist
+    - bukkit.command.whitelist.add
+    - bukkit.command.whitelist.disable
+    - bukkit.command.whitelist.enable
+    - bukkit.command.whitelist.list
+    - bukkit.command.whitelist.reload
+    - bukkit.command.whitelist.remove
+    - bukkit.command.xp
+    - craftbukkit
+    - group.admin
+    - simplejail.*
+    - simplejail.jailtime
+    - ^PromNation
+    - ^group.moderator
+    groups:
+    - moderator
+    meta:
+      prefix: '&5admin'
